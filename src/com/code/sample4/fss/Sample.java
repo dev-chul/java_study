@@ -24,7 +24,7 @@ public class Sample {
 		g.addEdge(6, 8);
 		
 		/*
-		 * adjacent가 각 점의 관계도를 의미한다.
+		 * 각 Node 객체의 adjacent는 각 노드와 인접한 관계를 의미한다.
 		 * nodes's index	adjacent's Node List
 		 * 0 				n1 
 		 * 1				n0 n2 n3 
