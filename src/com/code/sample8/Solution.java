@@ -43,7 +43,6 @@ class Solution {
     	for (String key : keys) {
     		Meta meta = result.get(key);
     		meta.doSort();
-    		System.out.println(key + " : " + meta.total + " : " + meta.rank);
     		
     		list.add(meta.rank.get(0).getKey());
     		if( meta.rank.size() > 1 ) {
