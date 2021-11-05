@@ -45,7 +45,7 @@ class snail {
         // Ãâ·Â
         for( int i=0; i<snail.length; i++ ) {
             for( int j=0; j<snail[i].length; j++ ) {
-        	    System.out.printf("%3d ", snail[i][j]);
+        	    System.out.printf("%5d", snail[i][j]);
             }
             System.out.println();
         }
