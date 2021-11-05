@@ -9,6 +9,12 @@ class snail {
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String input = br.readLine();
 		
+		final String REGEX = "[0-9]+";
+		if( !input.matches(REGEX) ) {
+			System.out.println("숫자만 입력해주세요.");
+			return;
+		}
+		
 		int inputNumber = Integer.valueOf(input);
 		
         int[][] snail = new int[inputNumber][inputNumber];

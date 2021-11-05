@@ -13,6 +13,10 @@ public class alphabet_map {
 		String input = br.readLine();
 		
 		input = input.trim();
+		if( "".equals(input) || null == input ) {
+			System.out.println("문자열 입력이 필요합니다.");
+			return;
+		}
 		
 		String[] arr = input.split("");
 		
