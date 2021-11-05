@@ -3,7 +3,6 @@ package kb;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Stack;
-import java.util.regex.Pattern;
 
 public class bracket_stack {
 
@@ -13,12 +12,12 @@ public class bracket_stack {
 		
 		String[] arr = input.split("");
 		
-		boolean result = checkBracket(arr);
+		String result = checkBracket(arr);
 		System.out.println(result);
 		
 	}
 	
-	public static boolean checkBracket(String[] arr) {
+	public static String checkBracket(String[] arr) {
 		String open = "({[";
 		Stack<String> st = new Stack<>();
 		for( int i=0; i<arr.length; i++ ) {
@@ -27,7 +26,7 @@ public class bracket_stack {
 			} else {
 				int idx = st.size() - 1;
 				if( idx < 0 ) {
-					return false;
+					return "False";
 				}
 				
 				String s = st.peek();
@@ -44,7 +43,7 @@ public class bracket_stack {
 			}
 		}
 		
-		return (st.size() > 0)? false : true;
+		return (st.size() > 0)? "False" : "True";
 	}
 	
 }
